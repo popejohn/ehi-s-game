@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ehi's Math Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="game-container" id="gameContainer">
+    <h1>Ehi's Math Game 🎮</h1>
+
+    <div class="status-bar">
+        <div class="status-item level">Level: <span id="level">1</span></div>
+        <div class="status-item lives">Lives: <span id="lives">3</span></div>
+        <div class="status-item score">Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="question-container">
+        <p id="question">Click 'Start Game' to begin!</p>
+        <div id="options"></div>
+    </div>
+
+    <p id="feedback"></p>
+    <p class="timer">⏳ Time Left: <span id="timer">45</span> seconds</p>
+
+    <div class="buttons">
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="resetGame()">Reset Game</button>
+        <button onclick="endGame()">End Game</button>
+    </div>
+
+    <!-- Confetti container for celebration -->
+    <div id="confetti-container"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
