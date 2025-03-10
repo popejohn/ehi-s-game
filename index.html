@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ehi's Math Game</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ehi's Math Game</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="game-container">
-        <h1>Ehi's Math Game 🎯</h1>
+  <div class="game-container">
+    <h1>Ehi's Math Game 🎯</h1>
 
-        <div class="status-bar">
-            <div class="score">Score: <span id="score">0</span></div>
-            <div class="level">Level: <span id="level">1</span></div>
-            <div class="lives">Lives: <span id="lives">3</span></div>
-            <div class="timer">⏳ Time Left: <span id="timer">45</span></div>
-        </div>
-
-        <div class="question-box">
-            <h2 id="question">Press Start to Begin!</h2>
-            <div class="options" id="options"></div>
-        </div>
-
-        <div class="buttons">
-            <button onclick="startGame()">Start Game</button>
-            <button onclick="togglePausePlay()" id="pausePlayButton">Pause</button>
-            <button onclick="resetGame()">Reset</button>
-            <button onclick="endGame()">End Game</button>
-          </div>
-          
-
-        <div id="feedback"></div>
+    <div class="status-bar">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="level">Level: <span id="level">1</span></div>
+      <div class="lives">Lives: <span id="lives">3</span></div>
+      <div class="timer">⏳ Time Left: <span id="timer">45</span></div>
     </div>
 
-    <!-- Sounds -->
-    <audio id="correctSound" src="beep-125033.mp3"></audio>
-    <audio id="wrongSound" src="explosion-42132.mp3"></audio>
-    <audio id="timesUpSound" src="blip-131856.mp3"></audio>
-    <audio id="levelUpSound" src="level-vii-short-258782.mp3"></audio>
+    <div class="question-box">
+      <h2 id="question">Press Start to Begin!</h2>
+      <div class="options" id="options"></div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="buttons">
+      <button onclick="startGame()">Start Game</button>
+      <button id="pausePlayButton" onclick="togglePausePlay()">Pause</button>
+      <button onclick="resetGame()">Reset</button>
+      <button onclick="endGame()">End Game</button>
+    </div>
+
+    <div id="feedback"></div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="correctSound" src="beep-125033.mp3"></audio>
+  <audio id="wrongSound" src="explosion-42132.mp3"></audio>
+  <audio id="timesUpSound" src="blip-131856.mp3"></audio>
+  <audio id="levelUpSound" src="level-vii-short-258782.mp3"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
